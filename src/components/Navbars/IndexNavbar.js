@@ -110,7 +110,7 @@ function IndexNavbar() {
                   <p>联系我们</p>
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   href="#pablo"     
                   to="/login-page"              
@@ -119,7 +119,7 @@ function IndexNavbar() {
                   <i className="now-ui-icons users_single-02"></i>
                   <p>注册/登录</p>                  
                 </NavLink>
-              </NavItem>  
+              </NavItem>   */}
               
             </Nav>
           </Collapse>

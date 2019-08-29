@@ -19,6 +19,7 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import TransparentFooter from "components/Footers/TransparentFooter.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
 
 function LoginPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -70,7 +71,7 @@ function LoginPage() {
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="First Name..."
+                        placeholder="怎么称呼..."
                         type="text"
                         onFocus={() => setFirstFocus(true)}
                         onBlur={() => setFirstFocus(false)}
@@ -88,7 +89,7 @@ function LoginPage() {
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="Last Name..."
+                        placeholder="邮箱或手机号..."
                         type="text"
                         onFocus={() => setLastFocus(true)}
                         onBlur={() => setLastFocus(false)}
@@ -104,37 +105,16 @@ function LoginPage() {
                       onClick={e => e.preventDefault()}
                       size="lg"
                     >
-                      Get Started
+                      开始
                     </Button>
-                    <div className="pull-left">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          Create Account
-                        </a>
-                      </h6>
-                    </div>
-                    <div className="pull-right">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          Need Help?
-                        </a>
-                      </h6>
-                    </div>
+                    
                   </CardFooter>
                 </Form>
               </Card>
             </Col>
           </Container>
         </div>
-        <TransparentFooter />
+        <DarkFooter />
       </div>
     </>
   );

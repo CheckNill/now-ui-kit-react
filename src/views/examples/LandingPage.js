@@ -14,8 +14,10 @@ import {
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -31,21 +33,22 @@ function LandingPage() {
   });
   return (
     <>
-      <ExamplesNavbar />
+      {/* <IndexNavbar /> */}
+      <ExamplesNavbar /> 
       <div className="wrapper">
         <LandingPageHeader />
         <div className="section section-about-us">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Who we are?</h2>
+                <h2 className="title">干点啥呢?</h2>
                 <h5 className="description">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record low maximum sea ice extent tihs year down
-                  to low ice extent in the Pacific and a late drop in ice extent
-                  in the Barents Sea.
+                  没啥正事，没啥好说的，随便写两句吧。然后加几百个省略号。。。                  
                 </h5>
+                <h5 className="description">
+                  PS：图片都没换
+                </h5>
+                
               </Col>
             </Row>
             <div className="separator separator-primary"></div>
@@ -60,11 +63,9 @@ function LandingPage() {
                     }}
                   >
                     <p className="blockquote blockquote-info">
-                      "Over the span of the satellite record, Arctic sea ice has
-                      been declining significantly, while sea ice in the
-                      Antarctichas increased very slightly" <br></br>
+                      文字也不想换，只是简单的修改修改 <br></br>
                       <br></br>
-                      <small>-NOAA</small>
+                      <small>-没办法，得省钱</small>
                     </p>
                   </div>
                   <div
@@ -84,37 +85,16 @@ function LandingPage() {
                     }}
                   ></div>
                   <h3>
-                    So what does the new record for the lowest level of winter
-                    ice actually mean
+                    所以，这里该放点啥呢？
                   </h3>
                   <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                    是在是不知道该放点啥啊，随便写俩字吧。
                   </p>
                   <p>
-                    For a start, it does not automatically follow that a record
-                    amount of ice will melt this summer. More important for
-                    determining the size of the annual thaw is the state of the
-                    weather as the midnight sun approaches and temperatures
-                    rise. But over the more than 30 years of satellite records,
-                    scientists have observed a clear pattern of decline,
-                    decade-by-decade.
+                    南无阿弥陀佛，大慈大悲观自在菩萨。。。。。。。
                   </p>
                   <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                    这里放简介这里放简介这里放简介这里放简介这里放简介这里放简介这里放简介这里放简介这里放简介这里放简介这里放简介这里放简介这里放简介这里放简介这里放简介这里放简介
                   </p>
                 </Col>
               </Row>
@@ -123,7 +103,7 @@ function LandingPage() {
         </div>
         <div className="section section-team text-center">
           <Container>
-            <h2 className="title">Here is our team</h2>
+            <h2 className="title">小团队，图片暂时没替换</h2>
             <div className="team">
               <Row>
                 <Col md="4">
@@ -133,41 +113,12 @@ function LandingPage() {
                       className="rounded-circle img-fluid img-raised"
                       src={require("assets/img/avatar.jpg")}
                     ></img>
-                    <h4 className="title">Romina Hadid</h4>
-                    <p className="category text-info">Model</p>
+                    <h4 className="title">成员A</h4>
+                    <p className="category text-info">web</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
+                      干web的，有多年web开发经验                      
                     </p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-facebook-square"></i>
-                    </Button>
+                    
                   </div>
                 </Col>
                 <Col md="4">
@@ -177,33 +128,12 @@ function LandingPage() {
                       className="rounded-circle img-fluid img-raised"
                       src={require("assets/img/ryan.jpg")}
                     ></img>
-                    <h4 className="title">Ryan Tompson</h4>
-                    <p className="category text-info">Designer</p>
+                    <h4 className="title">成员B</h4>
+                    <p className="category text-info">项目经理</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
+                      核心力量，有PMP证书、有多年项目管理经验。深谙敏捷开发之道。
                     </p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-linkedin"></i>
-                    </Button>
+                   
                   </div>
                 </Col>
                 <Col md="4">
@@ -213,41 +143,12 @@ function LandingPage() {
                       className="rounded-circle img-fluid img-raised"
                       src={require("assets/img/eva.jpg")}
                     ></img>
-                    <h4 className="title">Eva Jenner</h4>
-                    <p className="category text-info">Fashion</p>
+                    <h4 className="title">成员C</h4>
+                    <p className="category text-info">全栈工程师</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
+                      干后台的，也会点前端，移动端，主要使用NodeJS、React。
                     </p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-google-plus"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-youtube"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
+                    
                   </div>
                 </Col>
               </Row>
@@ -256,8 +157,8 @@ function LandingPage() {
         </div>
         <div className="section section-contact-us text-center">
           <Container>
-            <h2 className="title">Want to work with us?</h2>
-            <p className="description">Your project is very important to us.</p>
+            <h2 className="title">要找我们干点活吗？</h2>
+            <p className="description">来吧，联系我们吧，外包价格很便宜哦.</p>
             <Row>
               <Col className="text-center ml-auto mr-auto" lg="6" md="8">
                 <InputGroup
@@ -271,7 +172,7 @@ function LandingPage() {
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="First Name..."
+                    placeholder="怎么称呼..."
                     type="text"
                     onFocus={() => setFirstFocus(true)}
                     onBlur={() => setFirstFocus(false)}
@@ -288,7 +189,7 @@ function LandingPage() {
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="Email..."
+                    placeholder="邮箱或者号码..."
                     type="text"
                     onFocus={() => setLastFocus(true)}
                     onBlur={() => setLastFocus(false)}
@@ -298,7 +199,7 @@ function LandingPage() {
                   <Input
                     cols="80"
                     name="name"
-                    placeholder="Type a message..."
+                    placeholder="写点啥..."
                     rows="4"
                     type="textarea"
                   ></Input>
@@ -312,14 +213,15 @@ function LandingPage() {
                     onClick={e => e.preventDefault()}
                     size="lg"
                   >
-                    Send Message
+                    联系我们
                   </Button>
                 </div>
               </Col>
             </Row>
           </Container>
         </div>
-        <DefaultFooter />
+        {/* <DefaultFooter /> */}
+        <DarkFooter />
       </div>
     </>
   );

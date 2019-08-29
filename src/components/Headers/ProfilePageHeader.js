@@ -38,20 +38,20 @@ function ProfilePageHeader() {
           <div className="photo-container">
             <img alt="..." src={require("assets/img/ryan.jpg")}></img>
           </div>
-          <h3 className="title">Ryan Scheinder</h3>
-          <p className="category">Photographer</p>
+          <h3 className="title">项目主要负责人</h3>
+          <p className="category">成员B</p>
           <div className="content">
             <div className="social-description">
               <h2>26</h2>
-              <p>Comments</p>
+              <p>年龄</p>
             </div>
             <div className="social-description">
-              <h2>26</h2>
-              <p>Comments</p>
+              <h2>5</h2>
+              <p>工作年限</p>
             </div>
             <div className="social-description">
               <h2>48</h2>
-              <p>Bookmarks</p>
+              <p>总交付项目</p>
             </div>
           </div>
         </Container>
